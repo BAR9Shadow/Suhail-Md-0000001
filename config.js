@@ -33,7 +33,7 @@ global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]
 
 //========================= [ BOT SETTINGS ] ======8===================\\
 global.style = process.env.STYLE   || Math.floor(Math.random()*6) || '0'  // put '1' to "5" here to check bot styles
-global.flush = process.env.FLUSH   || "true"; // Make it "true" if bot not responed
+global.flush = process.env.FLUSH   || "false"; // Make it "true" if bot not responed
 global.gdbye = process.env.GOODBYE || process.env.CAN_GOODBYE || "true"; 
 global.wlcm  = process.env.WELCOME || process.env.CAN_WELCOME || "true";  // Make it "false" for disable WELCOME 
 
@@ -77,14 +77,14 @@ module.exports = {
   author : process.env.PACK_AUTHER|| "x2Z",
   packname: process.env.PACK_NAME || "x2Z",
   botname : process.env.BOT_NAME  || "x2Z bot",
-  ownername:process.env.OWNER_NAME|| "Anonymous",
+  ownername:process.env.OWNER_NAME|| "x2Z official",
 
 
   errorChat : process.env.ERROR_CHAT || "",
   KOYEB_API : process.env.KOYEB_API  || "false",
 
   REMOVE_BG_KEY : process.env.REMOVE_BG_KEY  || "",
-  OPENAI_API_KEY: process.env.OPENAI_API_KEY || "sk-proj-oiFlSn91QVtlJEgMSN87T3BlbkFJYmMzY17z5ZY7qafBHX1y",
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY || "",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
   HEROKU_APP_NAME:process.env.HEROKU_APP_NAME|| "",
   antilink_values:process.env.ANTILINK_VALUES|| "all",
@@ -100,7 +100,7 @@ module.exports = {
 
 
 
-global.ELEVENLAB_API_KEY = process.env.ELEVENLAB_API_KEY || "sk_6c64534916033068a9a02617c1b7c595b642459f1e23904f";
+global.ELEVENLAB_API_KEY = process.env.ELEVENLAB_API_KEY || "";
 global.aitts_Voice_Id = process.env.AITTS_ID|| "37";
 
 
